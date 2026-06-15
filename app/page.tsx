@@ -153,7 +153,7 @@ export default function Home() {
 
         <div className="site-header">
           <a className="brand" href="#top" aria-label="Finetec Engineering home">
-            <BrandLogo />
+            <BrandLogo priority />
           </a>
 
           <nav className="desktop-nav" aria-label="Primary navigation">

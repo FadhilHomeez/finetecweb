@@ -1,18 +1,18 @@
 :root {
-  --ink: #15191f;
-  --muted: #5f6670;
+  --ink: #121725;
+  --muted: #5c6674;
   --paper: #ffffff;
   --surface: #ffffff;
-  --line: #dce2e8;
-  --charcoal: #15191f;
-  --charcoal-2: #2d333b;
-  --red: #0646d9;
-  --blue: #0646d9;
-  --blue-dark: #003b9f;
-  --teal: #0646d9;
-  --amber: #e7edf7;
-  --soft: #f2f4f6;
-  --shadow: 0 20px 54px rgba(18, 28, 45, 0.1);
+  --line: #dbe4ec;
+  --charcoal: #121725;
+  --charcoal-2: #273244;
+  --blue: #09008f;
+  --blue-dark: #05005d;
+  --teal: #79b8dc;
+  --green: #49b95c;
+  --amber: #edf8fc;
+  --soft: #f4f9fc;
+  --shadow: 0 20px 54px rgba(9, 0, 143, 0.1);
 }
 
 * {
@@ -69,8 +69,8 @@ main {
   gap: 28px;
   min-height: 38px;
   padding: 9px max(24px, calc((100vw - 1180px) / 2));
-  background: #eef1f4;
-  color: #2f3843;
+  background: #eef8fc;
+  color: #253a5e;
   font-size: 0.78rem;
   font-weight: 520;
 }
@@ -99,42 +99,14 @@ main {
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   min-width: 0;
-  color: var(--ink);
   line-height: 1;
 }
 
-.brand-logo-mark {
-  width: 38px;
-  height: 38px;
-  color: var(--ink);
-  flex: 0 0 auto;
-}
-
-.brand-logo-text {
-  display: grid;
-  gap: 2px;
-  min-width: 0;
-}
-
-.brand-logo-name {
-  color: var(--ink);
-  font-size: 1.52rem;
-  font-weight: 740;
-  letter-spacing: 0;
-}
-
-.brand-logo-accent {
-  color: var(--blue);
-}
-
-.brand-logo-subtitle {
-  color: var(--muted);
-  font-size: 0.67rem;
-  font-weight: 560;
-  letter-spacing: 0;
-  text-transform: uppercase;
+.brand-wordmark {
+  width: 178px;
+  height: auto;
+  mix-blend-mode: multiply;
 }
 
 .desktop-nav {
@@ -259,7 +231,7 @@ main {
   width: min(100%, 430px);
   height: 1px;
   margin-bottom: 24px;
-  background: #9aa5b1;
+  background: linear-gradient(90deg, var(--green) 0 22%, var(--teal) 22% 54%, #9aa5b1 54% 100%);
 }
 
 h1,
@@ -275,7 +247,7 @@ h1 {
   font-size: 4.35rem;
   font-weight: 560;
   line-height: 1.02;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 h2 {
@@ -283,7 +255,7 @@ h2 {
   font-size: 3rem;
   font-weight: 560;
   line-height: 1.03;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 h3 {
@@ -291,7 +263,7 @@ h3 {
   font-size: 1.18rem;
   font-weight: 620;
   line-height: 1.15;
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
 }
 
 .hero-content > p:not(.eyebrow) {
@@ -332,7 +304,7 @@ h3 {
   color: var(--blue);
   font-size: 1.65rem;
   font-weight: 620;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .hero-media-caption p {
@@ -388,7 +360,7 @@ h3 {
 }
 
 .button-secondary:hover {
-  background: #edf2fa;
+  background: var(--amber);
   border-color: var(--blue);
   color: var(--blue);
 }
@@ -420,7 +392,7 @@ h3 {
   font-size: 1.9rem;
   font-weight: 640;
   line-height: 1;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 .stat span {
@@ -480,7 +452,7 @@ h3 {
 .process-grid li span {
   display: inline-block;
   margin-bottom: 16px;
-  color: var(--red);
+  color: var(--green);
   font-size: 0.78rem;
   font-weight: 680;
   letter-spacing: 0;
@@ -751,7 +723,7 @@ h3 {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: var(--blue);
+  background: var(--green);
   content: "";
   transform: scaleY(0.28);
   transform-origin: top;
@@ -792,7 +764,7 @@ h3 {
   font-size: 1.18rem;
   font-weight: 620;
   line-height: 1.22;
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
   overflow-wrap: anywhere;
 }
 
@@ -893,17 +865,8 @@ h3 {
   margin: 0;
 }
 
-.brand-logo-footer .brand-logo-mark {
-  width: 34px;
-  height: 34px;
-}
-
-.brand-logo-footer .brand-logo-name {
-  font-size: 1.15rem;
-}
-
-.brand-logo-footer .brand-logo-subtitle {
-  font-size: 0.58rem;
+.brand-logo-footer .brand-wordmark {
+  width: 136px;
 }
 
 @media (max-width: 980px) {
@@ -984,25 +947,8 @@ h3 {
     padding: 10px 18px;
   }
 
-  .brand-logo {
-    gap: 10px;
-  }
-
-  .brand-logo-mark {
-    width: 34px;
-    height: 34px;
-  }
-
-  .brand-logo-name {
-    font-size: 1.32rem;
-  }
-
-  .brand-logo-subtitle {
-    font-size: 0.56rem;
-  }
-
-  .brand-logo-footer .brand-logo-name {
-    font-size: 1.08rem;
+  .brand-wordmark {
+    width: 138px;
   }
 
   .hero {

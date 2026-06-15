@@ -72,14 +72,16 @@ const services = [
 
 const machines = [
   {
-    name: "Bystronic BySmart Fiber 3015",
-    type: "Laser Cutting System",
+    name: "Bystronic BySmart Fiber 3015; Fiber 3000",
+    type: "Fiber Laser Cutting System",
     image: assets.bendingMachine,
     specs: [
-      "4,000 x 2,000 mm nominal sheet size",
+      "3,000 x 1,500 mm nominal sheet size; 3,106 x 1,582 mm cutting area",
+      "3,000 W fiber laser source with 300-3,000 W adjustment range",
+      "Cuts up to 20 mm steel, 12 mm stainless steel or aluminium, and 6 mm copper or brass",
       "140 m/min max simultaneous positioning speed",
-      "ByVision cutting operation and manual control unit",
-      "Fiber laser for flame, fusion, and cutting gas processes",
+      "+/- 0.05 mm repeatability and +/- 0.1 mm positioning accuracy",
+      "1,100 kg maximum workpiece weight with 27 s table changeover",
     ],
   },
   {
@@ -117,7 +119,7 @@ const galleryItems = [
 const stats = [
   ["20+", "years of team experience"],
   ["6", "core fabrication services"],
-  ["4,000 x 2,000", "mm sheet cutting capacity"],
+  ["3,106 x 1,582", "mm laser cutting area"],
   ["SG", "based in North Link Building"],
 ];
 
